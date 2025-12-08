@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  user_registry:
+    build: .
+    container_name: gdpr-user-registry
+    volumes:
+      - database_data:/data
+    environment:
+      - DATABASE_PATH=/data/test_users.db
+
+volumes:
+  database_data:
