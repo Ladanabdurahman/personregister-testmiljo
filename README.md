@@ -26,7 +26,7 @@ docker exec gdpr-user-registry python -c "import app; app.clear_test_data(); app
 # Återinitiera databasen
 docker exec gdpr-user-registry python -c "import app; app.init_database(); app.display_users()"
 
-## 📁 Struktur
+# Struktur
 /app.py
 /Dockerfile
 /docker-compose.yml
